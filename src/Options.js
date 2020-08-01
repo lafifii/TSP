@@ -1,7 +1,8 @@
 function Option(txt, n_input, val = 0){
 
    this.create_design = function(){
-    this.button.style('background-color', '#8d96a3')
+    this.button.style('height', '30px');
+    this.button.style('background-color', '#8d96a3');
     this.button.style('border-radius','20px');
     this.button.style('border','none');
     this.button.style('font-family','Montserrat');
