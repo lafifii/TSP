@@ -29,7 +29,7 @@ function setup(){
   w =  windowWidth/2;
   h =  windowHeight;
 
-  canvas = createCanvas(windowWidth, max(windowHeight - 30, 30));
+  canvas = createCanvas(windowWidth, windowHeight);
   myMap = mappa.tileMap( options);
   myMap.overlay(canvas);
   myMap.onChange(algorithm.show());
