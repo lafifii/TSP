@@ -21,19 +21,6 @@ var alg_choosen = 0;
 
 function preload(){
   algorithm = new Backtracking();
-}
-
-function setup(){
-
-  textFont('Montserrat', 25);
-  w =  windowWidth/2;
-  h =  windowHeight;
-
-  canvas = createCanvas(windowWidth, windowHeight);
-  myMap = mappa.tileMap( options);
-  myMap.overlay(canvas);
-  myMap.onChange(algorithm.show());
-
   op_bt = new Option(['Backtracking'], 0);
   op_bt.button.mousePressed(run_bt);
 
@@ -50,6 +37,19 @@ function setup(){
   op_restart.button.mousePressed(restart);
 
   slider = createSlider(1 , 40 , 5);
+}
+
+function setup(){
+
+  textFont('Montserrat', 25);
+  w =  windowWidth/2;
+  h =  windowHeight;
+
+  canvas = createCanvas(windowWidth, windowHeight);
+  myMap = mappa.tileMap( options);
+  myMap.overlay(canvas);
+  myMap.onChange(algorithm.show());
+
 }
 
 function run_bt(){
